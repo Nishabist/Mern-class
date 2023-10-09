@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    let product=[
+        {
+            name:'pro',
+            value:200,
+            discount:100
+        },
+        {
+            name:'pro1',
+            value:300,
+            discount:50  
+        },
+        {
+            name:'pro2',
+            value:400,
+            discount:150
+        }
+    ]
+    for(let i=0;i<product.length;i++){
+        let prod=product[i];
+        if(prod){
+        
+      prod.   discountAmount=prod.value + prod.discount/100;
+      prod.afterDisc=prod.value - prod.discountAmount;
+    }
+    }
+    
+    for(let index in product){
+        let prod=product[index];
+        prod.   discountAmount=prod.value + prod.discount/100;
+      prod.afterDisc=prod.value - prod.discountAmount;  
+    }
+  
+
+    for(let prod of product){
+        if(prod){
+            prod.discountAmount=prod.value + prod.discount/100;
+      prod.afterDisc=prod.value - prod.discountAmount;
+        }
+    }
+    console.log(  product );
+
+
+    const arr=[3,5,2];
+    let total=0;
+   for(let index of arr){
+       total= total+index;
+   }
+   console.log(total);
+
+   let sum=0;
+   let i=0;
+   while(i<arr.length){
+    sum=arr[i]+sum;
+    i++;
+   }
+   console.log(sum);
+
+   const user = {
+  math :3,
+  science: 5,
+  computer: 9
+}
+let totalsum=0;
+for(let item in user){
+  totalsum= totalsum+user[item] ;
+}
+console.log(totalsum)
+
+
+
+//for getting value of object
+const myvalue=Object.values(user);
+console.log(myvalue)
+for(let i=0;i<myvalue.length;i++){
+    totalsum=totalsum+myvalue[i];
+}
+console.log(totalsum);
+
+
+//for getting key 
+const mykey=Object.keys(user);
+console.log(mykey);
+
+
+
+</script>
+</body>
+</html>
+
+

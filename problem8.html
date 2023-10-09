@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user={
+            math:'15rd position',
+            science:'5rd position',
+            computer:'10th position'
+        }
+        const myval=Object.values(user);
+        const x=myval.map((item)=>{
+          return parseInt(item);   
+    });
+    console.log(x);
+    </script>
+</body>
+</html>

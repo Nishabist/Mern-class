@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="center"></div>
+    <script>
+    //     var rec=document.querySelector("#center");
+    //    debugger;
+    //     let a=40;
+    //     var v=2;
+
+
+    let n='nisha';
+    let b="Hello";
+    let c=`hii`;
+    console.log(n);
+    console.log(b);
+    console.log(c);
+
+    let x=[12,34,'Krishna']
+    console.log (x[2]);
+
+    // let name2={
+    //     age:33,
+    //     HOME:'Mahendranagar',
+    // }
+console.log("I am from"+ " "+ name.HOME +" "+ x[1]*name.age);
+const user=[4,3,5];
+const Num=[34,67]
+
+user.push(9);
+
+console.log(user);
+user.pop(9);
+console.log(user)
+user.push(Num);
+console.log(user);
+
+const num=[3,4,6];
+const num2=[5,9];
+
+ const a=num.concat(num2)
+
+console.log(a);
+
+const num3=[2,34,3];
+
+//spread operator
+const num4=[...num3];
+num4.push(30);
+console.log(num4)
+console.log(num3)
+
+
+const arr=[1,5,2,4];
+  arr.splice(1,2);
+ console.log(arr);
+ 
+
+ //object
+const address='ktm';
+
+ const user1={
+     name:'ram'
+ }
+
+user1.address=address;
+
+console.log(user1)
+delete user1.address;
+console.log(user1)
+const place={
+    name:'hari',
+    home:'mahendranagar'
+}
+
+const nisha={
+    ...user1,
+    ...place
+}
+console.log(nisha)
+
+const user4 = {
+  name: 'hari',
+}
+const zip = {
+  id: 30
+}
+ const total={
+    ...zip,
+    ...user4
+}
+console.log(total)
+
+
+    </script>
+    <!-- function need to be called  -->
+    <!-- hakerrank
+    leetcode
+    freecodecamp -->
+
+
+    <table border="1px solid black" cellpadding="10px">
+        <th>
+            <tr >
+                <td rowspan="3">Day</td>
+            
+            <td colspan="3">Seminar</td>
+            </tr>
+      
+            <tr >
+                <td colspan="2">schedule</td>
+            
+            <td rowspan="2">Topic</td>
+        </tr>
+        <tr>
+            <td>Begin</td>
+            <td>End</td>
+        </tr>
+        </th>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 am</td>
+                <td rowspan="2">5:00 pm</td>
+                <td>Inter to XML</td>
+            </tr>
+            <tr>
+                <td>Validity</td>
+            </tr>
+            <tr>
+                <td rowspan="4">Tuesday</td>
+                <td>8:00 am</td>
+                <td>11:00 am</td>
+                <td rowspan="2" height="30px" >X path</td>
+            </tr>
+            <tr>
+                <td rowspan="2">11:00 am</td>
+                <td rowspan="2">2:00 pm </td>
+                
+            </tr>
+            <tr>
+                <td rowspan="2">XSL translation</td>
+            </tr>
+            <tr>
+                <td>2:00 pm</td>
+                <td>5:00 pm</td>
+                
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 pm</td>
+                <td>12:00 pm</td>
+                <td>XSl primary object</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <table border="1" cellspacing="0">
+        <tbody>
+            <tr>
+                <td rowspan="2">1.1</td>
+                <td>1.2</td>
+            </tr>
+            <tr>
+                <td rowspan="2" height="40px" >2.2</td>
+                
+            </tr>
+            <tr>
+                <td >3.1</td>
+            </tr>
+            <tr>
+                <td colspan="2" >4.1</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>

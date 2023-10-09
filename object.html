@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            
+const student1={
+    name:'ram',
+    id:32,
+    password: 'hello',
+  secretCode: 'shiv'
+   
+}
+ 
+const {name,id}=student1;
+ console.log(name,id)
+
+ //destruction + rest
+ const discription={
+    name:'Nisha',
+    address:'Mahendranagar',
+    Rollnumber:25,
+    education:'undergraduate',
+    hobby:'singing',
+    student1:{
+    name:'ram',
+    id:32,}
+ }
+ const{hobby,...others}=discription;
+ console.log(others);
+
+ const a=undefined;
+ console.log(typeof a);
+
+
+ //exception handling
+ const ram={
+    gs:'jidhd'
+ }
+  try{
+    console.log(ram.hf.jk)
+ }catch(err){
+    console.log(err);
+  }
+ console.log("hii")
+
+    </script>
+</body>
+</html>

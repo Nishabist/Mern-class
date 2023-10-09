@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr={
+            name:'Nisha',
+            address:'Kanchanpur',
+            Rollnumber:25
+        }
+        let student1={
+            name:'Nishu',
+            address:'Dhangadi',
+            Rollnumber:7
+        }
+        let allowed=['jpg','pjpg','npg']
+
+        let filename="a.b.c.jpg";
+        let ex=(filename.split(".")).pop();
+        console.log(typeof ex)
+        console.log(allowed.includes(ex))
+
+        let product=[];
+        let prod1={
+            name:'first',
+            price:100,
+            discount:10
+        };
+ 
+        let prod2={
+            name:'second',
+            price:20,
+            discount:20
+        }
+        let prod3={
+            name:'third',
+            price:100,
+            discount:10
+        };
+ 
+        let prod4={
+            name:'fourth',
+            price:20,
+            discount:50
+        }
+        product.push(prod1);
+        product.push(prod2);
+        product.push(prod3);
+        product.push(prod4);
+        let discountAmt=product[0].price*product[0].discount/100;
+        let Afterdiscount=product[0].price-discountAmt;
+        product[0].afterDis=Afterdiscount;
+        product[0].disAmt=discountAmt;
+        
+        let discountAmt1=product[1].price*product[1].discount/100;
+        let Afterdiscount1=product[1].price-discountAmt;
+        product[1].afterDis=Afterdiscount;
+        product[1].disAmt=discountAmt;
+
+        let discountAmt2=product[2].price*product[2].discount/100;
+        let Afterdiscount2=product[2].price-discountAmt;
+        product[2].afterDis=Afterdiscount;
+        product[2].disAmt=discountAmt;
+
+        const allowe=["jpg","jpeg","png","bmp"];
+        let str=allowe.join(",");
+
+    </script>
+</body>
+</html>

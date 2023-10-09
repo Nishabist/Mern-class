@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #clock{
+            border: 1px solid black;
+            width: 100px;
+            margin: auto;
+            
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+   <p id="clock"></p> 
+
+   <script>
+    const adddigit=(num)=>{
+        if(num<10){
+            num="0"+num;
+        }
+        return num;
+    }
+    const getClock=()=>{
+        let date = new Date()
+        let hours = adddigit(date.getHours())
+        let minutes= adddigit(date.getMinutes())
+        let second =adddigit(date.getSeconds())
+        document.getElementById('clock').innerHTML=hours+":"+minutes+":"+second
+    }
+let interval =setInterval(getClock,1000)
+   </script>
+</body>
+</html>

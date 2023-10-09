@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const functionA=({x,y,w=0})=>{
+let z= x+y+w;
+return z;
+        }
+        let a=functionA({x:10, y:29})
+        let b=functionA(3,2)
+        console.log(a);
+    
+const function1=()=>{
+    console.log("I am inside first function")
+    let data={};
+    const function2=()=>{
+        console.log("I am inside second function ")
+
+    }
+   
+    return {function2,data}
+}
+
+let response=function1()
+// let{function2,data}=function1;
+
+setTimeout(()=>{
+console.log("I am after 3 second")
+},3000)
+
+const fun1=(cb)=>{
+console.log("I am function first");
+cb();
+}
+
+const func2=()=>{
+    setTimeout(()=>{
+console.log("I am after 3 second")
+},3000)
+    console.log("I am function second");
+}
+
+fun1();
+func2();
+
+    </script>
+</body>
+</html>

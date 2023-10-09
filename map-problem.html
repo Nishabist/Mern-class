@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        const array=[
+            {
+                name:'one',
+                email:'abc@gmail.com',
+                address:'kathmandu',
+                language:'MERN'
+            },
+            {
+                name:'two',
+                email:'abcd@gmail.com',
+                address:'Lalitpur',
+                language:'React'
+            },
+            {
+                name:'three',
+                email:'abac@gmail.com',
+                address:'Bhaktapur',
+                language:'js'
+            },
+            {
+                name:'four',
+                email:'aabc@gmail.com',
+                address:'kathmandu',
+                language:'php'
+            },
+            {
+                name:'five',
+                email:'abbc@gmail.com',
+                address:'Lalitpur',
+                language:'MERN'
+            },
+            {
+                name:'six',
+                email:'abcc@gmail.com',
+                address:'Bhaktapur',
+                language:'React'
+            },
+            {
+                name:'Seven',
+                email:'abc22@gmail.com',
+                address:'kathmandu',
+                language:'Js'
+            },
+            {
+                name:'eight',
+                email:'abc22@gmail.com',
+                address:'Bhaktapur',
+                language:'php'
+            },
+            {
+                name:'nine',
+                email:'abc11@gmail.com',
+                address:'Lalitpur',
+                language:'MERN'
+            },
+            {
+                name:'ten',
+                email:'abc44@gmail.com',
+                address:'kathmandu',
+                language:'React'
+            }
+        ]
+        const aryktm=array.filter((value)=>{value.address.toLocaleLowerCase()==='kathmandu'});
+        const arybhat=array.filter((value)=>{value.address.toLocaleLowerCase()==='bhaktapur'});
+        const arylalitpur=array.filter((value)=>{value.address.toLocaleLowerCase()==='lalitpur'});
+        console.log(aryktm);
+        console.log(arybhat);
+        console.log(arylalitpur);
+        
+        let group={};
+        array.forEach((index)=>{
+           let key =index.address.toLocaleLowerCase();
+           if(!group[key]){
+            group[key]=[];
+           }
+           group[key].push(index);
+            }
+
+        )
+console.log(group)
+        
+
+    </script>
+</body>
+</html>
